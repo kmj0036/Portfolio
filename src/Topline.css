@@ -1,0 +1,8 @@
+.topline{
+    height: 1px;
+    width: calc(100% - 72px);
+    position: absolute;
+    right: 0;
+    top:48px;
+    background-color: #abadbe;
+}

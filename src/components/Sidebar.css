@@ -1,0 +1,83 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+.sidebar{
+    position: absolute;
+    width: 72px;
+    height: 100%;
+    background-color: rgb(32, 34, 37);
+}
+
+.mainicon{
+    height: 48px;
+    margin-bottom: 12px;
+}
+.server{
+    color: #fff;
+    height: 48px;
+    font-size: 13px;
+    margin: 8px 0;
+    
+}
+.serverlist{
+    height: calc(100% - 144px);
+    overflow-y: scroll;
+    
+}
+.serverlist::-webkit-scrollbar {
+    display: none;
+}
+.top16{
+    padding-top: 16px;
+}
+.sv_back{
+    margin: 0 auto;
+    justify-content: center;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: none;
+    
+}
+.radius{
+    display: flex;
+    align-items: center;
+    background-color: rgb(54, 57, 63);
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.radius2{
+    display: flex;
+    align-items: center;
+    background-color: rgb(54, 57, 63);
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.radius:hover{
+    border-radius: 20%;
+    background-color: rgb(88, 101, 242);
+}
+.radius2:hover{
+    border-radius: 20%;
+    background-color: rgb(192, 192, 192);
+}
+.radius>svg{
+    width: 36px;
+    height: 36px;
+}
+.bottomline{
+    margin: 0 auto;
+    width: 48px;
+    height: 10px;
+    border-bottom: 3px solid  rgb(54, 57, 63);; 
+}
+.add{
+    font-size: 40px;
+ 
+}

@@ -1,0 +1,19 @@
+.mainback{
+    background-color: rgb(49, 51, 56);
+    width: calc(100% - 312px);
+    height: 100vh;
+    position: absolute;
+    right:0;
+    overflow-y: hidden;
+    
+}
+.maintop{
+    display: flex;
+    height: 48px;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 18px;
+    font-weight: bold;
+}
+

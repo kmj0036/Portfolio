@@ -1,0 +1,55 @@
+.LeftcotainerStyle{
+    background-color: rgb(47, 49, 54);
+    width: 240px;
+    height: calc(100vh - 53px);
+    position: absolute;
+}
+.titlebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 48px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 20px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+.titlebar:hover{
+    background-color:rgb(60, 63, 69) ;
+}
+.titlebar > div {
+    transition: 0.5s;
+}
+.roratearrow{
+    
+    transform: rotate(90deg);
+}
+.titlebar >Serveroption{
+    transition: 2.5s;
+}
+.bottom{
+    padding: 0 10px;
+    display: flex;
+    height: calc( 100% - 53px);
+}
+.bottom ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: left;
+}
+.bottom ul li{
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    padding: 2px;
+}
+.bottom ul li:hover{
+    background-color:rgb(60, 63, 69) ;
+}
