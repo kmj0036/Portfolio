@@ -2,13 +2,13 @@ import React from 'react';
 import Maincontents from './Maincontents';
 import './Mainpage.css'
 
-const Mainpage = ({moveto, clickY}) => {
+const Mainpage = ({moveto, clickY,portfolio}) => {
     return (
         <div className='mainback'>
             <div className='maintop'>
                 {"catename"}
             </div>
-            <Maincontents moveto={moveto} clickY={clickY} server/>
+            <Maincontents moveto={moveto} clickY={clickY} portfolio={portfolio}/>
         </div>
     );
 };

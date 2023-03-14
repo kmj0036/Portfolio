@@ -6,16 +6,16 @@ import Mainpage from './components/mainpage/Mainpage';
 import ScrollY from './components/ScrollY';
 import Sidebar from './components/Sidebar';
 import Topline from './Topline';
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 const initialState = {
-  selectPort: 1,
+  selectPort: "snowman",
   portfolio:
   [
   {
-    id:"snowman",
-    title: "snowman",
-    content: ["1_포폴내용1","1_포폴내용2","1_포폴내용3","1_포폴내용4"]
+    id:"lightningshop",
+    title: "lightningshop",
+    content: ["","","",""]
   },
   {
     id:"totheedge",
@@ -36,7 +36,7 @@ const initialState = {
 
 function App() {
 
-const [appportfolio, setportfolio] = useState(initialState)
+const [appportfolio,setportfolio] = useState(initialState)
 const { selectPort } = appportfolio
 const { content } = appportfolio.portfolio.find(port=> port.id === appportfolio.selectPort)
 //category와 mainpage scroll 연결 
@@ -51,7 +51,7 @@ const handleTop = (num) => {
 const clickY= (text)=>{
   console.log(text)
 }
-console.log(moveto.current)
+// console.log(moveto.current)
 // let categoryindex = (i)=>{
   // moveto.current.innerText[i]
 
@@ -68,9 +68,15 @@ const serverClick= (serverid)=> {
     <BrowserRouter>
       <div className="App">
         {/* <Blackalpha onChangeSite={onChangeSite}/> */}
-      <Sidebar serverClick={serverClick} />
-      <ScrollY handleTop={handleTop}clickY={clickY} serverClick={serverClick} serverId={serverId}/>
-      <Mainpage moveto={moveto} clickY={clickY}/>
+      <Sidebar serverClick={serverClick} appportfolio={appportfolio} setportfolio={setportfolio} />
+      <Routes>
+        <Route path='/' element={
+          <>
+          <ScrollY handleTop={handleTop}clickY={clickY} serverClick={serverClick} serverId={serverId}  portfolio={content} setportfolio={setportfolio} appportfolio={appportfolio}/>
+          <Mainpage moveto={moveto} clickY={clickY} selectPort={selectPort} portfolio={content} appportfolio={appportfolio}/></>
+        }>
+        </Route>
+      </Routes>
       <Topline/>
       </div>
     </BrowserRouter>

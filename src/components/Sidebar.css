@@ -35,7 +35,15 @@
     display: flex;
     align-items: center;
     border: none;
-    
+    color: #fff;
+}
+.listmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    color: #fff;
+    font-size: 13px;
 }
 .radius{
     display: flex;
@@ -47,6 +55,8 @@
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
+    margin: 4px 0;
+    
 }
 .radius2{
     display: flex;

@@ -52,4 +52,5 @@
 }
 .bottom ul li:hover{
     background-color:rgb(60, 63, 69) ;
+    border-radius: 10px;
 }
