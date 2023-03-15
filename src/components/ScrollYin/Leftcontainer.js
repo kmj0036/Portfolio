@@ -8,12 +8,8 @@ const Leftcontainer = ({handleTop,clickY,serverClick,serverId,setportfolio,portf
     const[servername,setServername]=useState(false);
     const onClick2= (e)=>{
         setServername(!servername);
-    //     console.log({content})
-    }
-    
-   
-
-    
+    }   
+    console.log({portfolio})
     return (
         <>
         <div className='LeftcotainerStyle'>
@@ -27,8 +23,8 @@ const Leftcontainer = ({handleTop,clickY,serverClick,serverId,setportfolio,portf
                 {/* <ul className='movecate'> */}
                 <ul className='movecate'>
                     {portfolio.map((port,index)=>
-                    <li key={index} id={port} onClick={()=>handleTop(0)} className='radius' 
-                    >{port}</li>
+                    <li key={index} id={port.title} onClick={()=>handleTop(port.top)} className='radius' 
+                    >{port.title}</li>
                     )}
                 </ul>
             </div>

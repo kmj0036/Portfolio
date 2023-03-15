@@ -1,0 +1,41 @@
+.bigoption{
+    color: black;
+    height: 95%;
+    text-align: center;
+}
+img{
+    width: 500px;
+    height: auto;
+}
+.innertext{
+    /* display: flex; */
+    padding-top: 30px;
+    width: 70%;
+    margin: 0 auto;
+    /* justify-content: center; */
+
+}
+.innertext p {
+    font-size: 14px;
+}
+.explain{
+    padding-left: 30px;
+}
+.explain h2,p,a {
+    text-align: left;
+    /* padding-left: 15px; */
+}
+iframe {
+    border: 1px solid black;
+    /* width: 100%; */
+    z-index: 2;
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+}
+.firti {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: #000 1px solid;
+    
+}

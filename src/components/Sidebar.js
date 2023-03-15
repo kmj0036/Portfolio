@@ -16,6 +16,7 @@ const Sidebar = ({serverClick,appportfolio,setportfolio,}) => {
         const serverid = portid;
         serverClick(serverid)
     }
+    
 
     return (                            
         <div className='sidebar'>
@@ -37,7 +38,7 @@ const Sidebar = ({serverClick,appportfolio,setportfolio,}) => {
                         <ul className='listmenu'>
                             {portfolio.map(port=>
                             <li key={port.id} id={port.id} onClick={()=>onClick(port.id)} className='radius' 
-                            >{port.title}  </li>
+                            style={selectPort===port.id ? {background:" rgb(88, 101, 242)" ,borderRadius: "20%"} : null }>{port.title}  </li>
                             )}
                         </ul>
                     </div>

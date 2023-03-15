@@ -12,7 +12,7 @@ const Maincontents = ({moveto, clickY,portfolio}) => {
     return (
         <div className='mainbottom' ref={moveto}  onClick={onClick}>
                 {portfolio.map((port,index)=>
-                <div id={port} className='ex cate{index}'  
+                <div id={port} className={`ex cate${index+1}`}  
                 >{port}</div>
                 )}
         </div>
