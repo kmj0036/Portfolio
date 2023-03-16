@@ -3,13 +3,13 @@ import './Leftcontainer.css'
 import Serveroption from './Serveroption';
 
 
-const Leftcontainer = ({handleTop,clickY,serverClick,serverId,setportfolio,portfolio}) => {
+const Leftcontainer = ({handleTop,clickY,serverClick,serverId,setportfolio,portfolio,adress}) => {
     //servername 토글형으로 만들기
     const[servername,setServername]=useState(false);
     const onClick2= (e)=>{
         setServername(!servername);
     }   
-    console.log({portfolio})
+    // console.log({portfolio})
     return (
         <>
         <div className='LeftcotainerStyle'>
@@ -19,7 +19,7 @@ const Leftcontainer = ({handleTop,clickY,serverClick,serverId,setportfolio,portf
             </div>
             {/* left컨테이너 하위부분 */}
             <div className='bottom'>
-                {servername ? <Serveroption/>:null}
+                {servername ? <Serveroption adress={adress}/>:null}
                 {/* <ul className='movecate'> */}
                 <ul className='movecate'>
                     {portfolio.map((port,index)=>

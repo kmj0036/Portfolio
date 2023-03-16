@@ -9,6 +9,10 @@ import Topline from './Topline';
 import './extest.css' ;
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Lightning from './page/Lightning';
+import Thenadlee from './page/Thenadlee';
+import Nadleeexplain from './page/Nadleeexplain';
+import Lightningex from './page/Lightningex';
+
 
 const initialState = {
   selectPort: "univershop",
@@ -18,27 +22,29 @@ const initialState = {
     id:"univershop",
     title: "univershop",
     category:[
-      {title:"summary",
+      {title:"usecase",
       top:0},
-      {title:"technology",
+      {title:"explain",
       top:500}],
-    content: [<Lightning/>,]
-  },
-  {
-    id:"totheedge",
-    title: "totheedge",
-    category:[
-      {title:"summary",
-      top:0},
-      {title:"technology",
-      top:500},
-      {title:"member",
-      top:1000  }],
-    content: ["2_포폴내용1","2_포폴내용2","2_포폴내용3"]
+    content: [<Lightning/>,<Lightningex/>],
+    adress:"http://corona0113.dothome.co.kr/teamplay/index.php"
   },
   {
     id:"thenadlee",
     title: "thenadlee",
+    category:[
+      {title:"usecase",
+      top:0},
+      {title:"explain",
+      top:500},
+      {title:"member",
+      top:1000  }],
+    content: [<Thenadlee/>,<Nadleeexplain/>],
+    adress:"https://team-project-thenadlee.vercel.app/"
+  },
+  {
+    id:"some",
+    title: "some",
     category:[
       {title:"summary",
       top:0},
@@ -48,6 +54,7 @@ const initialState = {
       top:1000},
       {title:"member",
       top:1500}],
+      adress:"#",
     content: ["3_포폴내용1","3_포폴내용2","3_포폴내용3","3_포폴내용4"]
   },
   {
@@ -69,7 +76,8 @@ const initialState = {
       <h2 className='exsfi'>giga</h2>
       이건 너무한거 아니냐고
     </p> ,
-    "4_포폴내용2","4_포폴내용3","4_포폴내용4","엑세스"]
+    "4_포폴내용2","4_포폴내용3","4_포폴내용4","엑세스"],
+    adress:"#"
   }
 ]}
 
@@ -77,8 +85,7 @@ function App() {
 
 const [appportfolio,setportfolio] = useState(initialState)
 const { selectPort } = appportfolio
-const { content } = appportfolio.portfolio.find(port=> port.id === appportfolio.selectPort)
-const { category } = appportfolio.portfolio.find(port=> port.id === appportfolio.selectPort)
+const { content,category,adress } = appportfolio.portfolio.find(port=> port.id === appportfolio.selectPort)
 //category와 mainpage scroll 연결 
 const moveto = useRef()
 const [serverId, setServerId] = useState("main")
@@ -98,6 +105,7 @@ const clickY= (text)=>{
 // }
 
 const serverClick= (serverid)=> {
+  console.log(serverid)
   setServerId(serverid) 
 } 
 
@@ -112,8 +120,9 @@ const serverClick= (serverid)=> {
       <Routes>
         <Route path='/' element={
           <>
-          <ScrollY handleTop={handleTop}clickY={clickY} serverClick={serverClick} serverId={serverId}  portfolio={category} setportfolio={setportfolio} appportfolio={appportfolio}/>
-          <Mainpage moveto={moveto} clickY={clickY} selectPort={selectPort} portfolio={content} appportfolio={appportfolio}/></>
+          <ScrollY handleTop={handleTop}clickY={clickY} serverClick={serverClick} serverId={serverId}  portfolio={category}  adress={adress} setportfolio={setportfolio} appportfolio={appportfolio}/>
+          <Mainpage moveto={moveto} clickY={clickY} selectPort={selectPort} portfolio={content} appportfolio={appportfolio}/>
+          </>
         }>
         </Route>
       </Routes>

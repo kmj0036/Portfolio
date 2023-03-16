@@ -6,7 +6,7 @@ const Mainpage = ({moveto, clickY,portfolio}) => {
     return (
         <div className='mainback'>
             <div className='maintop'>
-                {"catename"}
+                
             </div>
             <Maincontents moveto={moveto} clickY={clickY} portfolio={portfolio}/>
         </div>

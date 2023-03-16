@@ -22,11 +22,11 @@
 }
 .mainbottom > div:nth-child(1) {
     background-color: antiquewhite;
-    height: 1000px;
+    height:100vh;
 }
 .mainbottom > div:nth-child(2) {
     background-color: rgb(212, 121, 171);
-    height: 500px
+    height: 700px
 }
 .mainbottom > div:nth-child(3) {
     background-color: rgb(191, 98, 217);
