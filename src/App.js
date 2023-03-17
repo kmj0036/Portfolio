@@ -6,79 +6,59 @@ import Mainpage from './components/mainpage/Mainpage';
 import ScrollY from './components/ScrollY';
 import Sidebar from './components/Sidebar';
 import Topline from './Topline';
-import './extest.css' ;
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Lightning from './page/Lightning';
 import Thenadlee from './page/Thenadlee';
 import Nadleeexplain from './page/Nadleeexplain';
 import Lightningex from './page/Lightningex';
+import { GiDiceTarget } from "react-icons/gi";
+import Introduce from './page/Introduce';
 
 
 const initialState = {
-  selectPort: "univershop",
+  selectPort: "Main",
   portfolio:
   [
-  {
-    id:"univershop",
-    title: "univershop",
-    category:[
-      {title:"usecase",
-      top:0},
-      {title:"explain",
-      top:500}],
-    content: [<Lightning/>,<Lightningex/>],
-    adress:"http://corona0113.dothome.co.kr/teamplay/index.php"
-  },
-  {
-    id:"thenadlee",
-    title: "thenadlee",
-    category:[
-      {title:"usecase",
-      top:0},
-      {title:"explain",
-      top:500},
-      {title:"member",
-      top:1000  }],
-    content: [<Thenadlee/>,<Nadleeexplain/>],
-    adress:"https://team-project-thenadlee.vercel.app/"
-  },
-  {
-    id:"some",
-    title: "some",
-    category:[
-      {title:"summary",
-      top:0},
-      {title:"technology",
-      top:500},
-      {title:"meaning",
-      top:1000},
-      {title:"member",
-      top:1500}],
-      adress:"#",
-    content: ["3_포폴내용1","3_포폴내용2","3_포폴내용3","3_포폴내용4"]
-  },
-  {
-    id:4,
-    title: "네번째포폴",
-    category:[
-      {title:"summary",
-      top:0},
-      {title:"technology",
-      top:500},
-      {title:"meaning",
-      top:1000},
-      {title:"member",
-      top:1500},
-      {title:"access",
-      top:2000}],
-    content: [
-    <p>
-      <h2 className='exsfi'>giga</h2>
-      이건 너무한거 아니냐고
-    </p> ,
-    "4_포폴내용2","4_포폴내용3","4_포폴내용4","엑세스"],
-    adress:"#"
-  }
+    {
+      id:"Main",
+      title:<GiDiceTarget/>,
+      category:[
+        {title:"summary",
+        top:0},
+        {title:"technology",
+        top:500},
+        {title:"meaning",
+        top:1000},
+        {title:"member",
+        top:1500}],
+        adress:"#",
+      content: [<Introduce/>]
+    },
+    {
+      id:"univershop",
+      title: "univershop",
+      category:[
+        {title:"usecase",
+        top:0},
+        {title:"explain",
+        top:500}],
+      content: [<Lightning/>,<Lightningex/>],
+      adress:"http://corona0113.dothome.co.kr/teamplay/index.php"
+    },
+    {
+      id:"thenadlee",
+      title: "thenadlee",
+      category:[
+        {title:"usecase",
+        top:0},
+        {title:"explain",
+        top:500},
+        {title:"URL",
+        top:1000  }],
+      content: [<Thenadlee/>,<Nadleeexplain/>],
+      adress:"https://team-project-thenadlee.vercel.app/"
+    },
+  
 ]}
 
 function App() {
@@ -96,7 +76,7 @@ const handleTop = (num) => {
   });
 }
 const clickY= (text)=>{
-  console.log(text)
+  // console.log(text)
 }
 // console.log(moveto.current)
 // let categoryindex = (i)=>{
@@ -105,7 +85,7 @@ const clickY= (text)=>{
 // }
 
 const serverClick= (serverid)=> {
-  console.log(serverid)
+  // console.log(serverid)
   setServerId(serverid) 
 } 
 

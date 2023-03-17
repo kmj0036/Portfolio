@@ -20,18 +20,9 @@ const Sidebar = ({serverClick,appportfolio,setportfolio,}) => {
 
     return (                            
         <div className='sidebar'>
-            <div className='mainicon'>
-                <div className='server'>
-                    <div className='sv_back top16'  id='main' onClick={serid}>
-                        <div className='radius' id='main' onClick={serid}>
-                            <GiDiceTarget id='main' onClick={serid}/>
-                        </div>
-                    </div>
-                </div>                    
-            </div>
             {/* 구분선 */}
             
-            <div className='bottomline'/>
+            {/* <div className='bottomline'/> */}
             <div className='serverlist'>
                 <div>
                     <div>

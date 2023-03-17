@@ -45,6 +45,13 @@
     color: #fff;
     font-size: 13px;
 }
+.listmenu:first-child{
+    margin-top: 8px;
+}
+.listmenu li:nth-child(2){
+    margin-top: 20px ;
+    /* border-top: 3px solid  rgb(54, 57, 63); */
+}
 .radius{
     display: flex;
     align-items: center;
