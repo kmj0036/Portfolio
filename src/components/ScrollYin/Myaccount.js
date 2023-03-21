@@ -8,7 +8,7 @@ const Myaccount = () => {
             <div className='ininfosec'>
                 <div className='profile'>
                     <div className ='usericon'></div>
-                    <div className='username'>username</div>
+                    <div className='username'>김민준</div>
                 </div>
                 <div className='setting'>
                     <IoMdSettings/>

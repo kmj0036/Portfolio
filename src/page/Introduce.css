@@ -3,15 +3,48 @@
     background-image: url(/public/images/workspace-g588121d70_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 60vh;
     position: relative;
+   
 }
+
 #coloralpha{
-    top: 48px;
+    left: 0;
     width: 100%;
-    height: 500px;
+    height: 60vh;
     position: absolute;
     background-color: rgba(104, 91, 47, 0.5);
     z-index: 2;
 }
+#coloralpha p{
+    display: inline-block;
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    color: rgba(255, 255, 255,0.85);
+    font-size: 18px;
+
+}
+#coloralpha h1{
+    color: aliceblue;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 50px;
+}
+#coloralpha h2{
+    padding-top: 50px;
+    font-size: 50px;
+    color: beige;
+
+}
+#coloralpha h3{
+    display: inline-block;
+    color: rgb(0, 255, 0);
+}
 h1{padding-top: 20px;}
+
+@media (max-width:640px) {
+    
+}

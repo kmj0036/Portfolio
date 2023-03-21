@@ -13,6 +13,9 @@ import Nadleeexplain from './page/Nadleeexplain';
 import Lightningex from './page/Lightningex';
 import { GiDiceTarget } from "react-icons/gi";
 import Introduce from './page/Introduce';
+import About from './page/About';
+import Archive from './page/Archive';
+import My from './page/My';
 
 
 const initialState = {
@@ -23,16 +26,16 @@ const initialState = {
       id:"Main",
       title:<GiDiceTarget/>,
       category:[
-        {title:"summary",
+        {title:"Introduce",
         top:0},
-        {title:"technology",
-        top:500},
-        {title:"meaning",
-        top:1000},
-        {title:"member",
-        top:1500}],
+        {title:"SKILL",
+        top:645},
+        {title:"Archive",
+        top:1345},
+        {title:"My Info",
+        top:2045}],
         adress:"#",
-      content: [<Introduce/>]
+      content: [<Introduce/>,<About/>,<Archive/>,<My/>]
     },
     {
       id:"univershop",
