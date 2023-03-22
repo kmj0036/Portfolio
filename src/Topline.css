@@ -6,3 +6,9 @@
     top:48px;
     background-color: #abadbe;
 }
+@media (width<1200px) {
+    .topline{
+        display: none;
+    }
+    
+}

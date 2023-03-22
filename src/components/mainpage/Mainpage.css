@@ -16,4 +16,13 @@
     padding-left: 18px;
     font-weight: bold;
 }
+@media (width<1200px){
+    .mainback{
+        position: static;
+        width: 100%;
+    }
+    .maintop{
+        display: none;
+    }
+}
 

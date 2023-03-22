@@ -37,7 +37,7 @@ h2{
     padding-top: 30px;
 }
 #ca a{
-    height: 20%;
+    height: 30%;
     color: #000;
     text-align: center;
     margin-top: 50px;
@@ -65,3 +65,18 @@ li{
 #red{
     color: red;
 }
+@media (width<1200px) {
+    #Arc{
+      height: 1200px;
+    }
+    #mess{
+      height: 40%;
+      width: 80%;
+    }
+    #innersection{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 80%;
+    }
+  }

@@ -96,5 +96,38 @@
 }
 .add{
     font-size: 40px;
- 
+}
+@media (max-width:1200px){
+    .sidebar{ 
+        position: inherit;
+        width: 100%;
+        height: 7vh;
+    }
+    .serverlist{
+        height: inherit;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .serverlist div{
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .listmenu{
+        display: flex;
+        flex-direction: row;
+        height: inherit;
+        padding: 0;
+        width: 100%;
+    }
+    .listmenu li{
+        margin: 0 8px;
+    }
+    .listmenu:first-child{
+        margin-top: 0;
+    }
+    .listmenu li:nth-child(2){
+        margin-top: 0;
+    }
 }

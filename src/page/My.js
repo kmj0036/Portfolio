@@ -1,18 +1,39 @@
 import React from 'react';
+import { FiPhone,FiUser,FiCalendar,FiMapPin,FiMail,FiLink } from 'react-icons/fi';
 import './My.css'
+
 
 const My = () => {
     return (
         <div id='My'>
             <div id='cont'>
                 <h2>About me</h2>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
+                <ul id='tle'>
+                    <li>
+                        <FiUser/>
+                        <p>이름<br/>김민준</p>
+                    </li>
+                    <li>
+                        <FiCalendar/>
+                        <p>생년월일<br/>1998.03.26</p>
+                    </li>
+                    <li>
+                        <FiPhone/>
+                        <p>연락처<br/>010-8717-0036</p>
+                    </li>
+                    <li>
+                        <FiMapPin/>
+                        <p>거주지<br/>울산광역시.남구</p>
+                    </li>
+                    <li>
+                        <FiMail/>
+                        <p>이메일<br/>lia8774@naver.com</p>
+                    </li>
+                    <li>
+                        <FiLink/>
+                        <p>오픈카톡<br/><a href='https://open.kakao.com/o/sJXDybbf'>LINK</a></p>
+                        
+                    </li>
                 </ul>
             </div>
         </div>
