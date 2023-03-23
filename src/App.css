@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: inline-block;
+  min-width: 300px;
 }
 
 .App-logo {
@@ -9,6 +11,7 @@
 li{
   list-style: none;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -50,3 +53,4 @@ li{
   }
   
 }
+

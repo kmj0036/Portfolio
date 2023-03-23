@@ -45,3 +45,15 @@
         justify-content: left;
     }
 }
+@media (width<500px) {
+    #tle li svg {
+        width: 0;
+    }
+    #tle li a{
+        width: 100%;
+        font-size: 14px;
+    }
+    #tle li a #text{
+        font-size: 14px;
+    }
+}

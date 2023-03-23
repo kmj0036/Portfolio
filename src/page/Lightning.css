@@ -39,3 +39,9 @@ iframe {
     border-bottom: #000 1px solid;
     
 }
+@media (width<1200px) {
+    iframe{
+        width: 100%;
+    }
+    
+}

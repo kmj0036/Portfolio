@@ -19,7 +19,7 @@ const My = () => {
                     </li>
                     <li>
                         <FiPhone/>
-                        <p>연락처<br/>010-8717-0036</p>
+                        <a href='tel:010-8717-0036'>연락처<br/>010-8717-0036</a>
                     </li>
                     <li>
                         <FiMapPin/>
@@ -27,7 +27,7 @@ const My = () => {
                     </li>
                     <li>
                         <FiMail/>
-                        <p>이메일<br/>lia8774@naver.com</p>
+                        <a href="mailto:lia8774@naver.com">이메일<br/>lia8774@naver.com</a>
                     </li>
                     <li>
                         <FiLink/>
